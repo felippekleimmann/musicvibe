@@ -1,0 +1,3 @@
+import { describe, it, expect } from 'vitest';
+import { validateFavorite, alreadyFavoritedTrack, alreadyFavoritedArtist } from '../favorite.service.js';
+describe('Favorite Service', () => { it('deve validar música favorita', () => expect(validateFavorite({userId:1,type:'track',trackId:2})).toBe(true)); it('deve validar artista favorito', () => expect(validateFavorite({userId:1,type:'artist',artistId:3})).toBe(true)); it('deve impedir tipo inválido', () => expect(() => validateFavorite({userId:1,type:'album'})).toThrow('Tipo')); it('deve identificar música repetida', () => expect(alreadyFavoritedTrack([{userId:1,trackId:2}],1,2)).toBe(true)); it('deve identificar artista repetido', () => expect(alreadyFavoritedArtist([{userId:1,artistId:3}],1,3)).toBe(true)); });

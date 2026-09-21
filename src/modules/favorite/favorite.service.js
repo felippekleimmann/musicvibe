@@ -1,0 +1,3 @@
+export const validateFavorite = ({ userId, type, trackId, artistId }) => { if (!userId) throw new Error('Usuário é obrigatório'); if (!['track', 'artist'].includes(type)) throw new Error('Tipo de favorito inválido'); if (type === 'track' && !trackId) throw new Error('Música é obrigatória'); if (type === 'artist' && !artistId) throw new Error('Artista é obrigatório'); return true; };
+export const alreadyFavoritedTrack = (favorites, userId, trackId) => favorites.some((favorite) => favorite.userId === userId && favorite.trackId === trackId);
+export const alreadyFavoritedArtist = (favorites, userId, artistId) => favorites.some((favorite) => favorite.userId === userId && favorite.artistId === artistId);

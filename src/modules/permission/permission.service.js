@@ -1,0 +1,1 @@
+export const hasPermission = (user, resource, action) => { if (user?.role === 'admin') return true; if (action === 'read') return Boolean(user); if (action === 'update') return user?.id === resource?.ownerId || user?.id === resource?.userId; if (action === 'delete') return user?.id === resource?.ownerId || user?.id === resource?.userId; return false; };

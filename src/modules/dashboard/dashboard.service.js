@@ -1,0 +1,2 @@
+export const buildDashboardStats = ({ users = [], tracks = [], artists = [], playlists = [] }) => ({ totalUsers: users.length, totalTracks: tracks.length, totalArtists: artists.length, totalPlaylists: playlists.length, activeTracks: tracks.filter((track) => track.active !== false).length, totalPlays: tracks.reduce((sum, track) => sum + (track.playCount || 0), 0) });
+export const canAccessDashboard = (user) => user?.role === 'admin';
