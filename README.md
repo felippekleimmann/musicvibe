@@ -2,6 +2,15 @@
 
 Projeto desenvolvido para a N2 seguindo o roteiro e o manual da Aula 01 de TDD. A aplicação foi criada do zero com Node.js, Express, EJS, Sequelize, MySQL e Vitest.
 
+## Gerência de Configuração — N2-P2
+
+- [Plano de GCS do MusicVibe](docs/PLANO_GCS.md): papéis, itens de configuração, branches, revisão, ambientes e recuperação.
+- [Evidências e situação da entrega](docs/evidencias/README.md).
+- [Roteiro de referência — Aula 1 da ONGConecta](https://github.com/lzcamargo/ongconecta/blob/main/docs/aulas/aula-1-repositorio.md).
+
+Repositório público: https://github.com/felippekleimmann/musicvibe.
+O par de revisão ainda precisa ser definido e aceitar acesso de escrita.
+
 ## Visão geral
 
 O MusicVibe é uma plataforma de streaming de música onde usuários podem ouvir faixas, criar playlists, explorar artistas e favoritar músicas/artistas. Administradores gerenciam o catálogo musical, gêneros, usuários e permissões.
@@ -22,11 +31,16 @@ O MusicVibe é uma plataforma de streaming de música onde usuários podem ouvir
 ## Como rodar
 
 ```bash
-npm install
-copy .env.example .env
-npm test
+npm ci
+cp .env.example .env
+npm run test:run
 npm run dev
 ```
+
+Use Node.js 20 ou superior. No Prompt de Comando do Windows, use
+`copy .env.example .env` no lugar de `cp`. Ajuste as variáveis do `.env` para
+seu MySQL/MariaDB local antes de iniciar o app; não versione esse arquivo.
+O CI usa Node.js 20 e executa `npm run test:coverage`.
 
 Banco de dados:
 
