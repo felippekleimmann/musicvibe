@@ -3,7 +3,7 @@
 | Controle do documento | Valor |
 |---|---|
 | Identificador | IC-DOC-PGCS-001 |
-| Versão | 1.2 |
+| Versão | 1.3 |
 | Data | 09/11/2026 |
 | Responsável | Felippe Kleimmann — @felippekleimmann |
 | Repositório oficial | https://github.com/felippekleimmann/musicvibe |
@@ -30,13 +30,15 @@ Referência: [Aula 1 — Preparar o repositório do seu projeto](https://github.
 |---|---|---|
 | Desenvolvedor líder e gestor de configuração | @felippekleimmann | Manter este plano, permissões, proteção da main, ambientes e histórico |
 | Autor da mudança | Desenvolvedor da branch | Descrever a alteração, seus riscos e sua validação no PR |
-| Par de revisão | @maccedofilho; convite com escrita enviado, aceite pendente | Aceitar acesso de escrita, revisar PRs e aprovar ou solicitar ajustes |
+| Par de revisão | @maccedofilho; convite aceito e acesso de escrita confirmado | Revisar PRs e aprovar ou solicitar ajustes |
 | Aprovador de produção | @felippekleimmann | Autorizar execuções que utilizem o environment production |
 
 O par precisa ser outra pessoa: o GitHub não permite ao autor aprovar o
-próprio PR. O par definido é @maccedofilho. O convite com acesso de escrita
-foi enviado em 09/11/2026. O aceite e a confirmação da permissão efetiva ainda
-estão pendentes; este plano não declara o requisito como concluído antes disso.
+próprio PR. O par definido é @maccedofilho, com convite aceito e permissão
+efetiva Write confirmada pela API do GitHub em 09/11/2026. O par aprovou o
+[PR #2](https://github.com/felippekleimmann/musicvibe/pull/2) às 19:33:53 e o
+integrou na main às 19:34:22, horário de Brasília, no mesmo dia. O requisito de
+par com acesso de escrita está atendido.
 
 ## 3. Ferramentas, ambientes e branches
 
@@ -155,6 +157,16 @@ aplicada, teste realizado e pendência humana.
 | Par com escrita | Permissão `push`/Write confirmada após o aceite; convite pendente não basta |
 | staging e production | Configuração dos dois environments e revisão obrigatória por @felippekleimmann |
 
+### Situação da execução em 09/11/2026
+
+Os cinco critérios da N2-P2 foram verificados: plano publicado e organização,
+repositório público, recusa real de push na main, par com escrita e os dois
+environments com o líder como revisor obrigatório de production.
+A comprovação está no [índice de evidências](evidencias/README.md), com
+[configurações atuais](evidencias/verificacao-github.json),
+[acesso e revisão do par](evidencias/par-revisao.json) e
+[recusa de push](evidencias/recusa-push-main.txt).
+
 ## 8. Histórico do plano
 
 | Versão | Data | Alteração |
@@ -162,3 +174,4 @@ aplicada, teste realizado e pendência humana.
 | 1.0 | 09/11/2026 | Plano inicial adaptado ao MusicVibe para N2-P2 / Aula 1 |
 | 1.1 | 09/11/2026 | Cancela convite à conta informada incorretamente; par continua a definir |
 | 1.2 | 09/11/2026 | Define @maccedofilho como par; convite Write enviado e aceite pendente |
+| 1.3 | 09/11/2026 | Confirma aceite, escrita, aprovação e integração do PR #2; atualiza a conferência dos cinco critérios |

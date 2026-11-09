@@ -9,8 +9,9 @@ Projeto desenvolvido para a N2 seguindo o roteiro e o manual da Aula 01 de TDD. 
 - [Roteiro de referência — Aula 1 da ONGConecta](https://github.com/lzcamargo/ongconecta/blob/main/docs/aulas/aula-1-repositorio.md).
 
 Repositório público: https://github.com/felippekleimmann/musicvibe.
-Par de revisão: [@maccedofilho](https://github.com/maccedofilho). Convite com
-acesso de escrita enviado; aguardando aceite.
+Par de revisão: [@maccedofilho](https://github.com/maccedofilho), com convite
+aceito e acesso de escrita confirmado. O par aprovou e integrou o
+[PR #2 com as evidências](https://github.com/felippekleimmann/musicvibe/pull/2).
 
 ## Visão geral
 

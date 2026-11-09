@@ -1,44 +1,46 @@
 # Evidências da N2-P2
 
-Responsável: @felippekleimmann. Preparação iniciada em 09/11/2026.
+Responsável: @felippekleimmann. Conferência atualizada em 09/11/2026.
 
-O [plano de GCS](../PLANO_GCS.md) está versionado neste repositório. Esta pasta
-concentra os registros reais de verificação; não substitui revisão por outra pessoa.
+O [plano de GCS](../PLANO_GCS.md) é um item de configuração versionado no
+repositório MusicVibe. Os cinco critérios avaliados estão atendidos.
 
-## Par de revisão — convite enviado, aceite pendente
+## Par de revisão confirmado
 
-Par confirmado pelo usuário: [@maccedofilho](https://github.com/maccedofilho).
-Convite com permissão **Write** enviado em 09/11/2026; aguardando aceite.
-O convite anterior para a conta incorreta `ricardomacedo` permanece cancelado.
-[Registro atualizado do par](par-revisao.json).
+[@maccedofilho](https://github.com/maccedofilho) aceitou o convite e possui
+permissão efetiva **Write**, confirmada pela API do GitHub. O par aprovou o
+[PR #2](https://github.com/felippekleimmann/musicvibe/pull/2) em 09/11/2026 às
+19:33:53 e o integrou na main às 19:34:22, horário de Brasília. O commit da
+integração é `c9b8ff3bffc59a020a79e327d817ffe9349742b8`.
 
-1. O colega aceita o convite em https://github.com/felippekleimmann/musicvibe/invitations.
-2. Confirmar a permissão efetiva de escrita e atualizar o registro por PR.
-3. O colega revisa e aprova o [PR #2](https://github.com/felippekleimmann/musicvibe/pull/2), se estiver correto.
-4. Após a aprovação, integrar por squash.
+O [registro do par](par-revisao.json) contém a permissão, aprovação e integração.
+Não há convite pendente nem pendência de acesso ou revisão do PR #2.
 
-O convite sem aceite não atende ao critério de acesso de escrita.
+## Conferência dos critérios
 
-## Registros reais de 09/11/2026
+| Critério da atividade | Situação | Evidência |
+|---|---|---|
+| Organização e plano como item de configuração | Atendido | [Plano de GCS](../PLANO_GCS.md), README, templates, CODEOWNERS, lockfile e .gitattributes |
+| Repositório acessível | Atendido | Repositório público; [verificação HTTP sem autenticação](verificacao-github.json) |
+| Recusa de push direto na main | Atendido | [Saída real do Git](recusa-push-main.txt): GH006, código 1 e main sem alteração |
+| Par de revisão com escrita | Atendido | [@maccedofilho com Write e PR #2 aprovado e integrado](par-revisao.json) |
+| staging e production, com o líder como revisor de produção | Atendido | [Configurações atuais](verificacao-github.json): somente branches protegidas; production exige @felippekleimmann |
 
-- [Recusa de push direto na main](recusa-push-main.txt): tentativa feita com a conta administradora; rejeitada por `GH006` e `protected branch hook declined`, código de saída 1. SHA da main igual antes e depois.
-- [Verificação inicial das configurações pela API](verificacao-github.json): retrato anterior à definição do par, com proteção, merges, environments e acesso público.
-- [Atualização do par](par-revisao.json): convite Write para @maccedofilho; aceite pendente.
-- [Plano publicado na main](https://github.com/felippekleimmann/musicvibe/blob/main/docs/PLANO_GCS.md).
-- [PR inicial de preparação, integrado antes da proteção](https://github.com/felippekleimmann/musicvibe/pull/1).
-- [CI aprovado na main](https://github.com/felippekleimmann/musicvibe/actions/runs/42691037456).
+## Registros de execução
 
-| Critério da atividade | Situação verificada |
-|---|---|
-| Organização e plano como item de configuração | Plano publicado na main; templates, CODEOWNERS, lockfile e .gitattributes presentes |
-| Repositório acessível | Público; repositório e plano retornaram HTTP 200 sem autenticação |
-| Evidência de recusa de push na main | Recusa real registrada no arquivo de texto acima |
-| Par de revisão com escrita | **Pendente de aceite: @maccedofilho convidado com Write** |
-| staging e production com o líder como revisor de produção | Configurados; somente branches protegidas e revisão obrigatória por @felippekleimmann em production |
+- [Recusa real de push direto na main](recusa-push-main.txt), inclusive da conta administradora.
+- [Verificação atual das configurações](verificacao-github.json), com os cinco critérios e os dois colaboradores.
+- [Acesso efetivo, revisão e integração do par](par-revisao.json).
+- [PR inicial de preparação](https://github.com/felippekleimmann/musicvibe/pull/1), integrado antes da proteção, conforme a ordem da Aula 1.
+- [PR #2: aprovação do par e integração das evidências](https://github.com/felippekleimmann/musicvibe/pull/2).
+- [CI aprovado na main após a integração](https://github.com/felippekleimmann/musicvibe/actions/runs/42713077138).
 
-Validação local: `npm ci` e `npm run test:coverage`; 16 arquivos e 183 testes
-passaram, cobertura de linhas de 89,01%. O CI do GitHub também passou.
+Na preparação, `npm ci` e `npm run test:coverage` concluíram com 16 arquivos e
+183 testes aprovados, com 89,01% de cobertura de linhas. O CI também passou
+após a integração do PR #2.
 
-Estes registros foram produzidos após a ativação da proteção e estão sujeitos
-a PR com uma aprovação. Enquanto o par não aprovar o PR, consulte os arquivos
-na branch do PR; eles ainda não estão integrados à main.
+## Histórico
+
+Os [registros históricos](historico/README.md) preservam as verificações feitas
+antes do aceite do colega. Eles não representam pendências atuais. O estado
+vigente é o apresentado neste índice e nos JSONs diretamente desta pasta.
