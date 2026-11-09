@@ -1,9 +1,24 @@
 {
-  "verificado_em": "2026-11-09T17:21:56-03:00",
-  "convite_cancelado": 342509216,
-  "conta_incorreta": "ricardomacedo",
-  "motivo": "Usuário informou que não era essa conta e pediu a exclusão do convite.",
-  "convite_ativo_para_essa_conta": false,
+  "verificado_em": "2026-11-09T19:27:57-03:00",
+  "repositorio": "https://github.com/felippekleimmann/musicvibe",
+  "par_de_revisao": "maccedofilho",
+  "perfil": "https://github.com/maccedofilho",
+  "convite": {
+    "id": 342526057,
+    "permissions": "write",
+    "created_at": "2026-11-09T22:26:46Z",
+    "html_url": "https://github.com/felippekleimmann/musicvibe/invitations"
+  },
+  "convite_pendente": true,
   "permissao_efetiva": "read",
-  "par_de_revisao": "A definir; aguardar perfil correto."
+  "convite_anterior_cancelado": {
+    "id": 342509216,
+    "conta": "ricardomacedo",
+    "permanece_sem_convite_ativo": true
+  },
+  "pendencias": [
+    "Par aceitar o convite.",
+    "Confirmar escrita efetiva.",
+    "Par revisar e aprovar PR #2; integrar por squash."
+  ]
 }

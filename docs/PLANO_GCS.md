@@ -3,7 +3,7 @@
 | Controle do documento | Valor |
 |---|---|
 | Identificador | IC-DOC-PGCS-001 |
-| Versão | 1.1 |
+| Versão | 1.2 |
 | Data | 09/11/2026 |
 | Responsável | Felippe Kleimmann — @felippekleimmann |
 | Repositório oficial | https://github.com/felippekleimmann/musicvibe |
@@ -30,12 +30,13 @@ Referência: [Aula 1 — Preparar o repositório do seu projeto](https://github.
 |---|---|---|
 | Desenvolvedor líder e gestor de configuração | @felippekleimmann | Manter este plano, permissões, proteção da main, ambientes e histórico |
 | Autor da mudança | Desenvolvedor da branch | Descrever a alteração, seus riscos e sua validação no PR |
-| Par de revisão | A definir; nenhum convite ativo | Aceitar acesso de escrita, revisar PRs e aprovar ou solicitar ajustes |
+| Par de revisão | @maccedofilho; convite com escrita enviado, aceite pendente | Aceitar acesso de escrita, revisar PRs e aprovar ou solicitar ajustes |
 | Aprovador de produção | @felippekleimmann | Autorizar execuções que utilizem o environment production |
 
 O par precisa ser outra pessoa: o GitHub não permite ao autor aprovar o
-próprio PR. A definição do colega e o aceite do convite são pendências da
-entrega; este plano não declara esse requisito como concluído.
+próprio PR. O par definido é @maccedofilho. O convite com acesso de escrita
+foi enviado em 09/11/2026. O aceite e a confirmação da permissão efetiva ainda
+estão pendentes; este plano não declara o requisito como concluído antes disso.
 
 ## 3. Ferramentas, ambientes e branches
 
@@ -160,3 +161,4 @@ aplicada, teste realizado e pendência humana.
 |---|---|---|
 | 1.0 | 09/11/2026 | Plano inicial adaptado ao MusicVibe para N2-P2 / Aula 1 |
 | 1.1 | 09/11/2026 | Cancela convite à conta informada incorretamente; par continua a definir |
+| 1.2 | 09/11/2026 | Define @maccedofilho como par; convite Write enviado e aceite pendente |
