@@ -1,5 +1,5 @@
 {
-  "verificado_em": "2026-11-09T17:16:24-03:00",
+  "verificado_em": "2026-11-09T19:54:03-03:00",
   "repositorio": {
     "html_url": "https://github.com/felippekleimmann/musicvibe",
     "private": false,
@@ -19,6 +19,11 @@
     },
     "plano_main": {
       "url": "https://raw.githubusercontent.com/felippekleimmann/musicvibe/main/docs/PLANO_GCS.md",
+      "http_status": 200,
+      "sem_autenticacao": true
+    },
+    "recusa_main": {
+      "url": "https://raw.githubusercontent.com/felippekleimmann/musicvibe/main/docs/evidencias/recusa-push-main.txt",
       "http_status": 200,
       "sem_autenticacao": true
     }
@@ -112,22 +117,56 @@
         "triage": true,
         "pull": true
       }
+    },
+    {
+      "login": "maccedofilho",
+      "role_name": "write",
+      "permissions": {
+        "admin": false,
+        "maintain": false,
+        "push": true,
+        "triage": true,
+        "pull": true
+      }
     }
   ],
   "convites_pendentes": [],
-  "pendencias": [
-    "Definir par de revisão, enviar convite com escrita e confirmar aceite.",
-    "Após o aceite, o par deve revisar e aprovar o PR de evidências."
+  "criterios_n2_p2": {
+    "plano_e_organizacao": "atendido",
+    "acesso_publico": "atendido",
+    "recusa_push_main": "atendido",
+    "par_com_escrita": "atendido",
+    "environments_e_revisor_producao": "atendido"
+  },
+  "itens_de_configuracao_verificados": [
+    "README.md",
+    ".gitignore",
+    ".gitattributes",
+    "package.json",
+    "package-lock.json",
+    ".env.example",
+    ".github/CODEOWNERS",
+    ".github/pull_request_template.md",
+    ".github/ISSUE_TEMPLATE/funcionalidade.yml",
+    ".github/ISSUE_TEMPLATE/defeito.yml",
+    ".github/workflows/ci.yml",
+    "docs/PLANO_GCS.md",
+    "docs/evidencias/recusa-push-main.txt"
   ],
-  "validacao_local": {
+  "validacao_local_preparacao": {
     "comando": "npm run test:coverage",
     "arquivos_testados": 16,
     "testes_passaram": 183,
-    "cobertura_linhas_percentual": 89.01,
-    "node": "25.9.0"
+    "cobertura_linhas_percentual": 89.01
   },
-  "ci_main": "https://github.com/felippekleimmann/musicvibe/actions/runs/42691037456",
-  "ci_preparacao": "https://github.com/felippekleimmann/musicvibe/actions/runs/42690928702",
-  "pr_preparacao": "https://github.com/felippekleimmann/musicvibe/pull/1",
-  "baseline_main": "4622002fe8c297c80fe0eb7c4a15a5ff9b200a22"
+  "ci_main": {
+    "conclusion": "success",
+    "headSha": "c9b8ff3bffc59a020a79e327d817ffe9349742b8",
+    "status": "completed",
+    "url": "https://github.com/felippekleimmann/musicvibe/actions/runs/42713077138"
+  },
+  "pr_evidencias": "https://github.com/felippekleimmann/musicvibe/pull/2",
+  "revisao_par": "APPROVED",
+  "baseline_evidencias": "c9b8ff3bffc59a020a79e327d817ffe9349742b8",
+  "pendencias": []
 }
