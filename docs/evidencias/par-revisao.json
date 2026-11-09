@@ -1,0 +1,20 @@
+{
+  "verificado_em": "2026-11-09T17:20:23-03:00",
+  "repositorio": "https://github.com/felippekleimmann/musicvibe",
+  "par": "ricardomacedo",
+  "perfil": "https://github.com/ricardomacedo",
+  "convite": {
+    "id": 342509216,
+    "permissions": "write",
+    "html_url": "https://github.com/felippekleimmann/musicvibe/invitations",
+    "created_at": "2026-11-09T20:19:37Z"
+  },
+  "convite_pendente": true,
+  "permissao_efetiva": "read",
+  "pendencias": [
+    "Ricardo aceitar o convite.",
+    "Confirmar acesso efetivo de escrita.",
+    "Ricardo revisar e aprovar o PR #2 para integração por squash."
+  ],
+  "nota": "Este registro atualiza a situação do par; verificacao-github.json preserva o retrato anterior ao convite."
+}
