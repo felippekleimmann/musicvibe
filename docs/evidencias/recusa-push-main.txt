@@ -1,0 +1,25 @@
+EVIDÊNCIA REAL — RECUSA DE PUSH DIRETO NA MAIN
+Repositório: https://github.com/felippekleimmann/musicvibe
+Data: 2026-11-09T17:15:50-03:00 (America/Sao_Paulo)
+Conta autenticada: felippekleimmann (administrador do repositório)
+
+Pré-condição: main protegida, 1 aprovação por PR, enforce_admins=true.
+Foi criado um commit vazio com git commit-tree, filho da main atual.
+O commit não altera nenhum arquivo e não foi integrado à main.
+
+SHA da main antes: 4622002fe8c297c80fe0eb7c4a15a5ff9b200a22
+SHA do commit vazio da tentativa: d463ac83cc5277349ed7fe52002b0aa37833e480
+Comando executado: git push origin d463ac83cc5277349ed7fe52002b0aa37833e480:refs/heads/main
+
+SAÍDA DO GIT (stdout + stderr):
+remote: error: GH006: Protected branch update failed for refs/heads/main.
+remote:
+remote: - Changes must be made through a pull request.
+To https://github.com/felippekleimmann/musicvibe.git
+ ! [remote rejected] d463ac83cc5277349ed7fe52002b0aa37833e480 -> main (protected branch hook declined)
+error: failed to push some refs to 'https://github.com/felippekleimmann/musicvibe.git'
+
+Código de saída: 1
+SHA da main depois: 4622002fe8c297c80fe0eb7c4a15a5ff9b200a22
+Main inalterada: True
+Push recusado: True
